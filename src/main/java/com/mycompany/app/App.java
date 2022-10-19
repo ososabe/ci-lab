@@ -6,6 +6,10 @@ package com.mycompany.app;
  */
 public class App {
   public static String triangulo(int a, int b, int c) {
+	  
+	   if(esTrianguloPitagorico( a, b,  c)){
+      return "es un triangolo pitagorico";
+    }
 
     if (!(a + b > c && a + c > b && b + c > a)) {
       return "error no es un triangulo";
@@ -21,9 +25,7 @@ public class App {
       return "es un triangolo escaleno";
     }
     
-     if(esTrianguloPitagorico( a, b,  c)){
-      return "es un triangolo pitagorico";
-    }
+    
       return "error no es un triangulo";
   }
   
