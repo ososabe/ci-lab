@@ -18,14 +18,13 @@ public class App {
     }
     
     if (a != b && a != c && b != c) {
-      return "es un triangulo escaleno";
+      return "es un triangolo escaleno";
     }
     
      if(esTrianguloPitagorico( a, b,  c)){
-      return "es un triangulo pitagorico";
+      return "es un triangolo pitagorico";
     }
-    
-    return "error no es un triangulo";
+      return "error no es un triangulo";
   }
   
   private static boolean esTrianguloPitagorico(int a,int b, int c){
